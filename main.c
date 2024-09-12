@@ -1,21 +1,27 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdbool.h>
+
+int findMax(int x, int y) {
+  /*
+   *  normal if/else
+    if(x > y) {
+      return x;
+
+    } else {
+      return y;
+    }
+  */
+
+  // Ternary Operator
+  return (x > y) ? x : y; 
+}
 
 int main() {
+  // Ternary Operator = shortcut to if/else when assigning/returning a value
+  // (condition) ? value if true : value if false
+  
+  int max = findMax(3, 4);
 
-  char name[25]; // allocate to 25 bytes
-  int age;
-
-  printf("\nWhat's your name? ");
-  //scanf("%s", &name);
-  fgets(name, 25, stdin); // name of variable, size, library
-  name[strlen(name)-1] = '\0'; // fix new line character
-
-  printf("\nHow old are you? ", name);
-  scanf("%d", &age);
-
-  printf("Hello %s, how are you?\n", name);
-  printf("You are %d years old!\n", age);
-
+  printf("%d", max);
   return 0;
 }
