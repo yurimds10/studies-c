@@ -14,4 +14,6 @@ int math() {
   double J = tan(45);
 
   printf("\n%lf", A);
+
+  return 0;
 }
