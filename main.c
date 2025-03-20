@@ -1,16 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include "src/exercicies/NumberGuessingGame.c"
-#include "src/exercicies/QuizGame.c"
-#include "src/BitwiseOperators.c"
+#include "./src/exercicies/calcSalary.c"
+#include "./src/exercicies/CalcIMC.c"
 
 int main()
 {
-  //numberGuessingGame();
-  //quizGame();
-  
-  bitwiseOperatorsLesson();
+  //calcSalary(7, 1500);
+  calcIMC(500.0, 1.65);
 
   return 0;
 }
